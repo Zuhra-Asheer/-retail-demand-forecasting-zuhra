@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 import joblib, os
-
+# In src/feature_engineering.py, make the weekend logic more explicit
 def add_features(df):
     df['day_of_week'] = df['date'].dt.dayofweek
     weekend_days = [5, 6] # 5=Saturday, 6=Sunday
